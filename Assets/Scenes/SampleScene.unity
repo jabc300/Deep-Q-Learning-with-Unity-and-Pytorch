@@ -3090,7 +3090,7 @@ MonoBehaviour:
   motorForce: 500
   initialPosition: {fileID: 2144855061}
   wheelFrontLeft: {fileID: 1513008336}
-  wheelFrontRight: {fileID: 1670487937}
+  wheelFrontRight: {fileID: 936081638}
   wheelBackLeft: {fileID: 2043959443}
   wheelBackRight: {fileID: 1670487937}
 --- !u!114 &1144450328
