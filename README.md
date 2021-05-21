@@ -25,3 +25,6 @@ En este proyecto se revisará como conectar Python y Unity para entrenar a una a
 1. Aguilera Luzania José Luis.
 2. Baez Camacho Jesús Armando.
 3. Castro Marquez Francisco Javier.
+
+### Información:
+Para una información detallada del proceso y el código: [Link](https://github.com/jabc300/Deep-Q-Learning-with-Unity-and-Pytorch/blob/main/PythonNeuralNetwork/UnityRL.ipynb)
