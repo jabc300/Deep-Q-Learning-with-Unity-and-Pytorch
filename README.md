@@ -9,7 +9,7 @@ Unity tiene características que le permiten resaltar sobre los demás como un m
 ML-Agents también cuenta con una API de Python para que los investigadores puedan usar Reinforcement Learning, Imitation Learning, Neuroevolution o cualquier otro método que quieran. Esto es beneficioso tanto para los desarrolladores de juegos que pueden crear mejor IA de una manera más sencilla, así como para los investigadores que tienen en sus manos un motor de simulación bastante avanzado y genérico.
 
 ### Objetivo
-En este proyecto se revisará como conectar Python y Unity para entrenar a una agente cuya tarea será moverse a través de un circuito de carreras como lo haría una IA de un juego real mediante Deep Q-Learning.
+En este proyecto se revisará como conectar Python y Unity para entrenar a una agente cuya tarea será moverse a través de un circuito de carreras como lo haría una IA de un juego real mediante Deep Q-Learning mostrando el potencial de crear agentes inteligentes que puedan competir con jugadores en entornos de simulación 3D.
 
 ### Tecnologías
 | Tecnología         | Versión         |
