@@ -1,64 +1,120 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 
 public class CarAgent : Agent
 {
-    public float SteerForce, MotorForce;
-    public Transform initialPosition;
-    public WheelCollider FR_L_Wheel, FR_R_Wheel, RE_L_Wheel, RE_R_Wheel;
+    // -----------------------------------------------------------------------------------------------------------------
+
+    #region VARIABLES
+
+    /// <summary>
+    /// Steer force.
+    /// </summary>
+    [Header("Movement")] [SerializeField] private float steerForce;
+
+    /// <summary>
+    /// Motor force.
+    /// </summary>
+    [SerializeField] private float motorForce;
+
+    
+    /// <summary>
+    /// The starting position where the agent will start in each episode.
+    /// </summary>
+    [Header("Start position")] [SerializeField] private Transform initialPosition;
+
+    
+    /// <summary>
+    /// WheelCollider component for the Wheel Front Left.
+    /// </summary>
+    [Header("Wheels")] [SerializeField] private WheelCollider wheelFrontLeft;
+
+    /// <summary>
+    /// WheelCollider component for the Wheel Front Right.
+    /// </summary>
+    [SerializeField] private WheelCollider wheelFrontRight;
+
+    /// <summary>
+    /// WheelCollider component for the Wheel Back Left.
+    /// </summary>
+    [SerializeField] private WheelCollider wheelBackLeft;
+
+    /// <summary>
+    /// WheelCollider component for the Wheel Back Right.
+    /// </summary>
+    [SerializeField] private WheelCollider wheelBackRight;
+
+    /// <summary>
+    /// Reference to this transform component.
+    /// </summary>
+    private Transform _transform;
+
+    #endregion
+
+    // -----------------------------------------------------------------------------------------------------------------
+
+    #region Agent Methods
+
+    /// <summary>
+    /// Function that is called when starting a new episode and is responsible for restarting the agent.
+    /// </summary>
     public override void OnEpisodeBegin()
     {
-        transform.position = initialPosition.position;
-        transform.eulerAngles = new Vector3(0, 90, 0);
+        _transform = transform;
+        _transform.position = initialPosition.position;
+        _transform.eulerAngles = new Vector3(0f, 90f, 0f);
     }
 
+
+    /// <summary>
+    /// Function that is in charge of determining the behavior depending on the actions it receives.
+    /// Actions: 0: go straight | 1: Steer to the right | 2: Steer to the left.
+    /// </summary>
+    /// <param name="actions"></param>
     public override void OnActionReceived(ActionBuffers actions)
     {
-        int selection = actions.DiscreteActions[0];
-        float h;
-        float v = -MotorForce;
+        int action = actions.DiscreteActions[0];
+        float h, v = -motorForce;
 
-        /*Actions in selection
-         0: Don't steer, go straight
-         1: Steer to the right
-         2: Steer to the left
-         */
+        if (action <= 1) h = action;
+        else h = -1;
 
-        Debug.Log(actions.DiscreteActions[0]);
-
-        if(selection <= 1)
-        {
-            h = selection;
-        }else
-        {
-            h = -1;
-        }
-
-        RE_R_Wheel.motorTorque = v;
-        RE_L_Wheel.motorTorque = v;
-
-        FR_L_Wheel.steerAngle = h * SteerForce;
-        FR_R_Wheel.steerAngle = h * SteerForce;
+        wheelBackLeft.motorTorque = v;
+        wheelBackRight.motorTorque = v;
+        wheelFrontLeft.steerAngle = h * steerForce;
+        wheelFrontRight.steerAngle = h * steerForce;
     }
 
+    #endregion
+
+    // -----------------------------------------------------------------------------------------------------------------
+
+    #region Unity Collision Methods
+
+    /// <summary>
+    /// Function that is invoked when the physics engine detects a collision between two or more objects.
+    /// </summary>
+    /// <param name="other">An object that contains all the information about the collision.</param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Target"))
-        {
             SetReward(+1f);
-        }
+
         if (other.gameObject.CompareTag("Wall"))
         {
             SetReward(-5f);
             EndEpisode();
         }
+
         if (other.gameObject.CompareTag("Goal"))
         {
             SetReward(+5f);
             EndEpisode();
         }
     }
+
+    #endregion
+
+    // -----------------------------------------------------------------------------------------------------------------
 }
