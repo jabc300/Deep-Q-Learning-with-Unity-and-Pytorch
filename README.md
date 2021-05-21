@@ -1,4 +1,4 @@
-# Deep-Q-Learning-with-Unity-and-Pytorch
+# Creación de agentes inteligentes en videojuegos con Deep Q-Learning utilizando Unity y ML-Agents.
 ### Introducción
 **Unity** fue diseñado como un motor de juegos, es decir, un software especializado en la creación de videojuegos, pero con el tiempo Unity se fue actualizando y actualmente es el segundo motor de juegos más utilizado solo superado por el UnrealEngine de EpicGames. Sin embargo el objetivo inicial de ser un motor de videojuegos a cambiado bastante hasta convertirse más en un entorno de simulación.
 
