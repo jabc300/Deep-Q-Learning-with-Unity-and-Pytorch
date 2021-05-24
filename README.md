@@ -70,3 +70,10 @@ Puedes encontrar la libreta de jupyter con toda la información aquí: [Libreta]
 - Código en Python del entrenamiento.
 
 ### Referencias.
+1. Technologies, U. (2020, 5 junio). Unity - Manual: Unity User Manual (2019.3). Unity 2019 - Documentation. https://docs.unity3d.com/2019.3/Documentation/Manual/index.html
+2. U. (2020). Unity-Technologies/ml-agents. GitHub ML-Agents Toolkit. https://github.com/Unity-Technologies/ml-agents
+3. U. (2020). Unity-Technologies/ml-agents. GitHub ML-Agents Python API. https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Python-API-Documentation.md
+4. Juliani, A., Berges, V., Teng, E., Cohen, A., Harper, J., Elion, C., Goy, C., Gao, Y., Henry, H., Mattar, M., Lange, D. (2020). Unity: A General Platform for Intelligent Agents. arXiv preprint arXiv:1809.02627. https://github.com/Unity-Technologies/ml-agents.
+5. Kenney • Racing Kit. (2010). Kenney Racing Kit. https://www.kenney.nl/assets/racing-kit
+6. Reinforcement Learning Series Intro - Syllabus Overview. (2018). Deeplizard. https://deeplizard.com/learn/video/nyjbcRQ-uQ8
+7. Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning, Second Edition: An Introduction (2nd ed.) [Libro electrónico]. Bradford Book. http://incompleteideas.net/book/RLbook2020.pdf
