@@ -26,7 +26,7 @@ Entraremos en más detalles en las siguientes secciones.
 
 ---
 # Contenido de nuestro proyecto
-Puedes encontrar la libreta de jupyter con toda la información aquí:
+Puedes encontrar la libreta de jupyter con toda la información aquí: ![Libreta](https://github.com/jabc300/Deep-Q-Learning-with-Unity-and-Pytorch/tree/main/Jupyter-NoteBook)
 
 ### 1. Introducción
  - ¿Qué es Reinforcement Lerning? y ¿Porqué usarlo?
