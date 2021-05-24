@@ -1,7 +1,7 @@
 # Creación de agentes inteligentes en videojuegos con Deep Q-Learning utilizando Unity y ML-Agents.
 ---
 
-## 1. Introducción
+## 1. Introducción.
 Aprender interactuando con el entorno es probablemente lo primero que se nos viene a la mente cuando pensamos acerca de la naturaleza del aprendizaje. Por ejemplo, los niños tienden a tener comportamientos erráticos que van desapareciendo a medida que crecen, pero son por medio de estos que los niños interactuan con el entorno, aprenden que comportamiento puede ser beneficioso, acerca de las consecuencias de las acciones y que deben hacer para conseguir ciertas metas. Este paradigma en *Machine Learning* es conocido como aprendizaje por refuerzo (*Reinforcement Learning* o *RL*) y es el tema central de este trabajo, en el que utilizaremos un motor de videojuegos para crear una IA que aprenda por medio de algoritmos de *Reinforcement Learning* a moverse en un circuito de carrera.
 
 ##### ¿Qué vamos a hacer?
