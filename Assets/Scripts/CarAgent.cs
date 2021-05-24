@@ -106,12 +106,6 @@ public class CarAgent : Agent
             SetReward(-5f);
             EndEpisode();
         }
-
-        if (other.gameObject.CompareTag("Goal"))
-        {
-            SetReward(+5f);
-            EndEpisode();
-        }
     }
 
     #endregion

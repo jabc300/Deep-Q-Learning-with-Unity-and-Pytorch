@@ -1,17 +1,15 @@
 # Creación de agentes inteligentes en videojuegos con Deep Q-Learning utilizando Unity y ML-Agents.
-### Introducción
-**Unity** fue diseñado como un motor de juegos, es decir, un software especializado en la creación de videojuegos, pero con el tiempo Unity se fue actualizando y actualmente es el segundo motor de juegos más utilizado solo superado por el UnrealEngine de EpicGames. Sin embargo el objetivo inicial de ser un motor de videojuegos a cambiado bastante hasta convertirse más en un entorno de simulación.
+---
 
-Unity tiene características que le permiten resaltar sobre los demás como un motor de físicas avanzado, capacidad para manejar gráficos en 2D y 3D, compatibilidad con la mayoría de plataformas tecnológicas que van desde sistemas de dispositivos mobiles (Android, IOS), hasta dispositivos de realidad aumentada y realidad virtual (Oculus Rift, Microsoft HoloLens, etc.), en total es compatible con 25 plataformas. También cuenta con una interfaz sencilla de utilizar y el lenguaje de programación principal es C# aunque recientemente liberaron una forma de programación visual para usuarios menos experimentados y la capacidad de usar Python.
+## 1. Introducción
+Aprender interactuando con el entorno es probablemente lo primero que se nos viene a la mente cuando pensamos acerca de la naturaleza del aprendizaje. Por ejemplo, los niños tienden a tener comportamientos erráticos que van desapareciendo a medida que crecen, pero son por medio de estos que los niños interactuan con el entorno, aprenden que comportamiento puede ser beneficioso, acerca de las consecuencias de las acciones y que deben hacer para conseguir ciertas metas. Este paradigma en *Machine Learning* es conocido como aprendizaje por refuerzo (*Reinforcement Learning* o *RL*) y es el tema central de este trabajo, en el que utilizaremos un motor de videojuegos para crear una IA que aprenda por medio de algoritmos de *Reinforcement Learning* a moverse en un circuito de carrera.
 
-**The Unity Machine Learning Agents Toolkit** (ML-Agents) es un proyecto open-source que le permite a juegos y simulaciones dentro de Unity servir como environments para el entrenamiento de agentes inteligentes. ML-Agents permite a los desarrolladores utilizar los últimos algoritmos (basados en Pytorch) para el entrenamiento de agentes inteligentes, para 2D, 3D y VR/AR. 
+##### ¿Qué vamos a hacer?
+Como el título sugiere, vamos a utilizar Unity y ML-Agents para crear una IA de videojuegos, inspirados en los juegos de carreras 3D, decidimos que el objetivo de este proyecto es crear una IA que pueda manejar por un circuito de carreras sin ser explicitamente programada para ello, solo se programaran sus acciones y recompensas. Por ejemplo, seguir en el camino aumentará las recompensas obtenidas, mientras que salir del circuito terminará inmediatamente con la simulación, pero es la IA quien tendrá que descubrir esto.
 
-ML-Agents también cuenta con una API de Python para que los investigadores puedan usar Reinforcement Learning, Imitation Learning, Neuroevolution o cualquier otro método que quieran. Esto es beneficioso tanto para los desarrolladores de juegos que pueden crear mejor IA de una manera más sencilla, así como para los investigadores que tienen en sus manos un motor de simulación bastante avanzado y genérico.
+Entraremos en más detalles en las siguientes secciones.
 
-### Objetivo
-En este proyecto se revisará como conectar Python y Unity para entrenar a una agente cuya tarea será moverse a través de un circuito de carreras como lo haría una IA de un juego real mediante Deep Q-Learning mostrando el potencial de crear agentes inteligentes que puedan competir con jugadores en entornos de simulación 3D.
-
-### Tecnologías
+##### Tecnologías utilizadas
 | Tecnología         | Versión         |
 |--------------------|-----------------|
 | Unity              | 2019.3.1f1      |
@@ -21,10 +19,54 @@ En este proyecto se revisará como conectar Python y Unity para entrenar a una a
 | Python             | 3.9             |
 | Pytorch            | 1.8.1 + CPU     |
 
-### Equipo
+##### Equipo
 1. Aguilera Luzania José Luis.
 2. Baez Camacho Jesús Armando.
 3. Castro Marquez Francisco Javier.
 
-### Información:
-Para una información detallada del proceso y el código: [Link](https://github.com/jabc300/Deep-Q-Learning-with-Unity-and-Pytorch/blob/main/PythonNeuralNetwork/UnityRL.ipynb)
+---
+# Contenido de nuestro proyecto
+Puedes encontrar la libreta de jupyter con toda la información aquí:
+
+### 1. Introducción
+ - ¿Qué es Reinforcement Lerning? y ¿Porqué usarlo?
+ - ¿Qué es Deep Q-Learning?
+ - ¿Qué es Unity?
+ - ¿Qué es ML-Agents?
+ - ¿Qué vamos a hacer?
+ - Tecnologías utilizadas.
+ - Equipo.
+ - Indice.
+
+### 2. Primeros pasos con Unity
+- Assets utilizados.
+- Plugins utilizados de Unity.
+- Estructura del proyecto en Unity.
+- Estructura del environment.
+	- Componentes.
+- Estructura del Agente.
+	- Componentes.
+	- Comportamiento.
+
+### 3. Dependencias de Python
+- Librerias a utilizar.
+- Importar las librerías.
+
+### 4. Primeros pasos con ML-Agents
+- ¿Cómo conectar ML-Agents con Unity a través de Python?
+- ¿Cómo obtener información de los Agentes?
+- La primera observación visual del Agente.
+- Probar el seguimiento de un Agente.
+
+### 5. Definiciones de VisualQNetwork, Experiencia y Entrenamiento.
+- Definición de la clase ```VisualQNetwork```.
+	- Definición y explicación.
+- Definición de la clase ``Experience``.
+	- Definición y explicación.
+- Definición de la clase ``Trainer``.
+	- Definición y explicación.
+
+### 6. Entrenamiento.
+- Código en Python del entrenamiento.
+
+### Referencias.
