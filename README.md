@@ -26,10 +26,11 @@ Entraremos en más detalles en las siguientes secciones.
 
 ---
 # Contenido de nuestro proyecto
-Puedes encontrar un pdf con toda la información aquí: ![PDF](https://github.com/jabc300/Deep-Q-Learning-with-Unity-and-Pytorch/blob/main/Contenido%20del%20proyecto.pdf)
+Puedes encontrar un pdf con toda la información aquí: [PDF](https://github.com/jabc300/Deep-Q-Learning-with-Unity-and-Pytorch/blob/main/Contenido%20del%20proyecto.pdf)
 
 Puedes encontrar la libreta de jupyter con toda la información aquí: [Libreta](https://github.com/jabc300/Deep-Q-Learning-with-Unity-and-Pytorch/tree/main/Jupyter-NoteBook)
 
+Artículo de medium: [medium](https://a218217643.medium.com/creaci%C3%B3n-de-agentes-inteligentes-para-videojuegos-con-deep-q-learning-utilizando-unity-y-ml-agents-5c379624f669)
 
 ### 1. Introducción
  - ¿Qué es Reinforcement Lerning? y ¿Porqué usarlo?
