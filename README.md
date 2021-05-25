@@ -27,6 +27,7 @@ Entraremos en más detalles en las siguientes secciones.
 ---
 # Contenido de nuestro proyecto
 Puedes encontrar un pdf con toda la información aquí: ![PDF](https://github.com/jabc300/Deep-Q-Learning-with-Unity-and-Pytorch/blob/main/Contenido%20del%20proyecto.pdf)
+
 Puedes encontrar la libreta de jupyter con toda la información aquí: [Libreta](https://github.com/jabc300/Deep-Q-Learning-with-Unity-and-Pytorch/tree/main/Jupyter-NoteBook)
 
 
